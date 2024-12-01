@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f4c35c;
+    padding: 2rem;
+    color: #dd5928;
+}
+
+header .logo {
+    max-width: 200px; /* Limit logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem; /* Center the logo and add spacing below it */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #dd5928;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: #f4c35c;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    color: #dd5928;
+    margin-bottom: 1rem;
+}
+
+.zone {
+    margin-bottom: 2rem;
+}
+
+.zone h3 {
+    color: #dd5928;
+}
+
+.animal-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+/* Ticket Prices, Special Events, Opening Hours */
+section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Directions Section */
+#directions iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #dd5928;
+    color: white;
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar a {
+        display: none; /* Hide links initially */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger icon */
+    }
+
+    .navbar.active a {
+        display: block; /* Show links when hamburger is clicked */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .zone h3 {
+        font-size: 1.4rem;
+    }
+
+    .animal-image {
+        max-width: 100%;
+    }
+}

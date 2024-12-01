@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Kingdom Zoo</title>
+    <link rel="stylesheet" href="css/resources/index.css">
+</head>
+<body>
+    <header class="header">
+        <img src="resources/images/logo zoo.webp" alt="Animal Kingdom Logo" class="logo">
+        <h1>Welcome to Animal Kingdom Zoo</h1>
+        <p>Experience the wild up close and personal!</p>
+    </header>
+    <nav class="navbar">
+        <a href="#ticket-prices">Ticket Prices</a>
+        <a href="#opening-hours">Opening Hours</a>
+        <a href="#special-events">Special Events</a>
+        <a href="#directions">Directions</a>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+    <main>
+        <section id="zoo-sectors">
+            <h2>Explore Our Zones</h2>
+            <div class="zone">
+                <h3>Zone 1: Small and Family-Friendly Animals</h3>
+                <p><strong>Highlight Animal:</strong> Goat</p>
+                <img src="resources/images/goat.jpg" alt="Goat" class="animal-image">
+            </div>
+            <div class="zone">
+                <h3>Zone 2: Exotic and Rare Animals</h3>
+                <p><strong>Highlight Animal:</strong> Red Panda</p>
+                <img src="resources/images/redpanda.jpeg" alt="Red Panda" class="animal-image">
+            </div>
+            <div class="zone">
+                <h3>Zone 3: Larger or Endangered Animals and Educational Exhibits</h3>
+                <p><strong>Highlight Animal:</strong> Orangutan</p>
+                <img src="resources/images/orangutan.jpg" alt="Orangutan" class="animal-image">
+            </div>
+        </section>
+
+        <section id="ticket-prices">
+            <h2>Ticket Prices & Discounts</h2>
+            <p>Adults: €20</p>
+            <p>Children (3-12 years): €10</p>
+            <p>Senior Citizens: €15</p>
+            <p>Group Discounts: 10% off for groups of 10 or more.</p>
+        </section>
+
+        <section id="opening-hours">
+            <h2>Opening Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 7:00 PM</p>
+        </section>
+
+        <section id="special-events">
+            <h2>Special Events</h2>
+            <ul>
+                <li><strong>Family Day:</strong> Every Saturday - Enjoy special activities for kids and families!</li>
+                <li><strong>Wildlife Talks:</strong> Every Sunday - Learn from our animal experts.</li>
+                <li><strong>Night Safari:</strong> First Friday of every month.</li>
+            </ul>
+        </section>
+
+        <section id="directions">
+            <h2>Directions to the Zoo</h2>
+            <p>Address: Flügelhofgasse, 4020 Linz, Austria</p>
+            <p>By Car: Free parking available on-site.</p>
+            <p>By Bus: Take Bus 25 to Animal Kingdom Stop.</p>
+            <h3>Find Us on the Map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.437565398312!2d14.284152815953441!3d48.28133717923555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773986bc7d8a64f%3A0x9bc90b03a69b1106!2sFl%C3%BCgelhofgasse%2C%204020%20Linz%2C%20Austria!5e0!3m2!1sen!2sus!4v1698681234567!5m2!1sen!2sus"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Animal Kingdom Zoo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
